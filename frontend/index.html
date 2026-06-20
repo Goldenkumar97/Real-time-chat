@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="Light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-Time Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <section id="loginScreen" class="screen login-screen active">
+      <div class="login-card">
+        <h1>Real-Time Chat</h1>
+
+        <div class="chat-hero">
+          <img src="Chat-image.png" alt="Real Time Chat">
+        </div>
+
+        <div>
+          <p>⚡ Real-Time Messaging</p>
+          <p>🟢 Online Status</p>
+          <p>✓✓ Read Receipts</p>
+          <p>🌙 Dark / Light Theme</p>
+        </div>
+
+        <p>Join the chat room and start messaging.</p>
+        <label class="field-label" for="nameInput">Your Name</label>
+        <input id="nameInput" type="text" maxlength="30" placeholder="e.g. Golden Kumar">
+        <button id="joinBtn" class="primary-btn" type="button">Join Chat</button>
+        <p id="loginHint" class="login-hint"></p>
+      </div>
+    </section>
+
+    <section id="chatScreen" class="screen chat-screen">
+      <header class="chat-header">
+        <div class="header-top">
+          <div>
+            <h2 id="chatTitle">Real-Time Chat</h2>
+            <div id="userCount" class="user-count">0/2 Users Connected</div>
+          </div>
+
+          <div class="header-actions">
+            <button id="themeToggle" class="icon-btn theme-btn" type="button" aria-label="Toggle theme">🌙</button>
+
+            <div class="menu-wrapper">
+              <button id="menuToggle" class="icon-btn menu-btn" type="button" aria-label="Open menu">⋮</button>
+
+              <div id="menuDropdown" class="menu-dropdown hidden">
+                <button id="leaveChatBtn" type="button">Leave Chat</button>
+                <button id="clearChatBtn" type="button">Clear Chat</button>
+                <button id="copyLastBtn" type="button">Copy Last Message</button>
+              </div>
+            </div>
+
+            <span id="connectionBadge" class="connection-badge">Disconnected</span>
+          </div>
+        </div>
+
+        <div id="typingIndicator" class="typing-indicator"></div>
+      </header>
+
+      <main id="messages" class="messages"></main>
+
+      <footer class="composer">
+        <input id="messageInput" type="text" maxlength="500" placeholder="Type a message">
+        <button id="sendBtn" class="send-btn" type="button" disabled>Send</button>
+      </footer>
+    </section>
+  </div>
+
+  <script src="theme.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
