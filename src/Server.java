@@ -14,8 +14,10 @@ import java.util.Date; // Imports Date for current time on each message.
 import java.util.List; // Imports List interface for client collection.
 
 public class Server { // Declares the main chat server class.
-    private static final int PORT = 8080; // Defines the fixed server port required by the task.
-    private static final int MAX_CLIENTS = 2; // Defines that only two users can be connected at a time.
+    private static final int PORT =
+        Integer.parseInt(System.getenv().getOrDefault("PORT", "8080"));
+
+    private static final int MAX_CLIENTS = 2;
     private static final String WEB_SOCKET_GUID = "258EAFA5-E914-47DA-95CA-C5AB0DC85B11"; // Defines the official WebSocket GUID used in accept key generation.
     private final List<ClientHandler> clients = Collections.synchronizedList(new ArrayList<ClientHandler>()); // Stores active clients in a thread-safe list.
 
