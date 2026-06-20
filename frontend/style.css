@@ -481,6 +481,8 @@ button:focus-visible, input:focus-visible {
 @media (max-width: 720px) { 
   body { 
     padding: 0; 
+    position: fixed; 
+    inset: 0; 
   } 
 
   .app { 
@@ -489,6 +491,10 @@ button:focus-visible, input:focus-visible {
     height: 100dvh; 
     border-radius: 0; 
   } 
+
+  .messages {
+    justify-content: flex-end;
+  }
 
   .chat-header { 
     padding: 7px 12px 5px; 
@@ -572,10 +578,6 @@ button:focus-visible, input:focus-visible {
     margin:5px 0 5px;
 }
 
-
-
-
-
 html,
 body{
     width:100%;
@@ -588,6 +590,7 @@ body{
 .app{
     width:100vw;
     height:100vh;
+    height:100dvh;
     margin:0;
     padding:0;
     border-radius:0;
