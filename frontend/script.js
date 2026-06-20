@@ -259,7 +259,7 @@ function handleServerMessage(message) {
 function connectSocket() { 
   clearReconnectTimer(); 
   try { 
-    ws = new WebSocket("ws://localhost:8080"); 
+    ws = new WebSocket("wss://captivating-elegance-production-f587.up.railway.app");
   } catch (error) { 
     setConnectionState("Connection Failed", false); 
     scheduleReconnect(); 
