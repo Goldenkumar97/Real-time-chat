@@ -1,1 +1,1 @@
-wss://captivating-elegance-production-f587.up.railway.app
+con
