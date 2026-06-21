@@ -1,17 +1,23 @@
 # Real-Time Chat Application
 
-A lightweight real-time chat application built using Java WebSocket, HTML, CSS, and JavaScript. The application enables instant communication between users through a persistent WebSocket connection and provides a clean, responsive user interface.
+A modern real-time chat application built using **Java WebSocket, HTML, CSS, and JavaScript**. The application enables instant communication between users through persistent WebSocket connections and provides a clean, responsive, and user-friendly interface.
+
+## Live Demo
+
+Frontend: https://realtime-chatgo.netlify.app/
 
 ## Features
 
 * Real-Time Messaging
-* Online Status Indicator
-* Read Receipts
-* Dark / Light Theme
-* Responsive User Interface
-* User Input Validation
+* Online User Status
 * Typing Indicator
-* Two-User Chat Support
+* Read Receipts (Double Tick)
+* Dark / Light Theme Toggle
+* Responsive Design (Desktop & Mobile)
+* User Input Validation
+* Join / Leave Notifications
+* Two-User Real-Time Communication
+* WebSocket-Based Instant Updates
 
 ## Technology Stack
 
@@ -26,6 +32,24 @@ A lightweight real-time chat application built using Java WebSocket, HTML, CSS, 
 * Java
 * WebSocket
 
+## Screenshots
+
+### Login Screen
+
+![Login Screen](screenshots/01_Login_Screen.png)
+
+### Mobile Chat Interface
+
+![Mobile Chat](screenshots/02_Mobile_Chat_UI.jpeg)
+
+### Desktop Chat - Dark Theme
+
+![Dark Theme](screenshots/03_Desktop_Chat_Dark_Mode.png)
+
+### Desktop Chat - Light Theme
+
+![Light Theme](screenshots/04_Desktop_Chat_Light_Mode.png)
+
 ## Project Structure
 
 ```text
@@ -38,9 +62,17 @@ RealTimeChat/
 │   ├── theme.js
 │   └── Chat-image.png
 │
+├── screenshots/
+│   ├── 01_Login_Screen.png
+│   ├── 02_Mobile_Chat_UI.jpeg
+│   ├── 03_Desktop_Chat_Dark_Mode.png
+│   └── 04_Desktop_Chat_Light_Mode.png
+│
 ├── src/
 │   └── Server.java
 │
+├── Dockerfile
+├── Procfile
 └── README.md
 ```
 
@@ -60,24 +92,39 @@ java -cp src Server
 
 ### 3. Launch the Application
 
-Open `frontend/index.html` in a web browser.
+Open `frontend/index.html` in your browser.
 
 ### 4. Start Chatting
 
-Open the application in a second browser window or tab and join with another user name to test real-time communication.
+Open the application in another browser window, tab, or device and join with a different username to test real-time communication.
 
 ## Key Highlights
 
 * Built using Java WebSocket technology for real-time communication.
 * Supports instant message delivery between connected users.
-* Includes online status tracking and read receipts.
-* Provides dark and light theme support.
-* Designed with a modern and responsive user interface.
+* Displays online user status in real time.
+* Includes typing indicators and read receipts.
+* Supports dark and light themes.
+* Fully responsive on desktop and mobile devices.
+* Clean and modern chat interface inspired by popular messaging applications.
 
 ## Future Enhancements
 
-* Multi-user chat rooms
-* User authentication
-* Message history storage
-* Secure WebSocket (WSS) support
-* File and image sharing
+* Multi-User Chat Rooms
+* User Authentication
+* Message History Storage
+* Secure WebSocket (WSS) Support
+* File & Image Sharing
+* Emoji Support
+* Push Notifications
+* Database Integration (MySQL)
+
+## Author
+
+**Golden Kumar**
+
+GitHub: https://github.com/Goldenkumar97
+
+---
+
+⭐ If you found this project useful, consider giving it a star on GitHub.
